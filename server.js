@@ -3,6 +3,7 @@
 const express = require("express");
 const cors = require("cors");
 const fetchQuotes = require("./src/utils/fetchQuotes");
+const path = require("path");
 
 const app = express();
 app.use(cors());
@@ -10,9 +11,12 @@ app.use(cors());
 const morgan = require("morgan");
 app.use(morgan("dev"));
 
+// Serve static UI from /public
+app.use(express.static(path.join(__dirname, "public")));
+
 // Default route
 app.get("/", (req, res) => {
-  res.send("Currency API running 🚀");
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
 // Quotes route - DATA SOURCE LAYER

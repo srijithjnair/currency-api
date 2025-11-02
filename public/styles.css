@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin: 0; background: #f7f9fb; color: #111; }
+.container { max-width: 900px; margin: 36px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 6px 18px rgba(17,35,56,0.06); }
+h1 { margin: 0 0 12px 0; font-size: 20px; }
+#controls { display:flex; gap:12px; align-items:center; margin-bottom: 12px; }
+button { padding: 8px 12px; border-radius:6px; border:1px solid #d0d7de; background:#fff; cursor:pointer; }
+button:hover { background: #f3f4f6; }
+.muted { color: #6b7280; font-size: 13px; }
+#quotesTable { width: 100%; border-collapse: collapse; margin-top: 8px; }
+#quotesTable th, #quotesTable td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #eef2f7; }
+#message { margin-top: 12px; }
+
+.result-box { margin-top: 14px; padding: 12px; border: 1px solid #eef2f7; border-radius: 6px; background: #fbfdff; }
+#slippageTable { width: 100%; border-collapse: collapse; margin-top: 8px; }
+#slippageTable th, #slippageTable td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #eef2f7; }

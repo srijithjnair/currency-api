@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Currency API — UI</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Currency API — Quotes</h1>
+
+    <div id="controls">
+      <button id="refreshBtn">Refresh Quotes</button>
+      <button id="avgBtn">Get Averages</button>
+      <button id="slippageBtn">Get Slippage</button>
+      <span id="status" class="muted">Idle</span>
+    </div>
+
+    <div id="output">
+      <table id="quotesTable">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Source</th>
+            <th>Buy Price</th>
+            <th>Sell Price</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+
+      <div id="message" class="muted"></div>
+
+      <section id="averageSection" class="result-box" aria-live="polite">
+        <h2>Averages</h2>
+        <div id="averageResult" class="muted">--</div>
+      </section>
+
+      <section id="slippageSection">
+        <h2>Slippage</h2>
+        <table id="slippageTable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Source</th>
+              <th>Buy Price Slippage</th>
+              <th>Sell Price Slippage</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
