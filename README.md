@@ -41,7 +41,7 @@ This project implements several distinct features:
 ---
 ## Feature Details
 
-| Feature                | File/Location   | Description                                                                 |
+| Feature                | File/Location   |Description                                                                 |
 |------------------------|-----------------|-----------------------------------------------------------------------------|
 | Express server         | server.js       | Sets up the main API server and routes.                                     |
 | CORS support           | server.js       | Enables cross-origin requests for all endpoints.                            |
@@ -109,6 +109,14 @@ node server.js
 - **Port already in use:** Change the `PORT` variable or stop the conflicting process.
 - **CORS errors:** CORS is enabled by default, but you can configure it in `server.js`.
 - **Dependency issues:** Run `npm install` to ensure all packages are installed.
+
+## Live deployment (optional)
+
+The project is deployed live at:
+
+Live demo: [Live demo](https://currency-api-eno1.onrender.com/)
+
+If you have a different URL for a staging or alternate deployment, replace the link above or add additional links here.
 
 ## License
 MIT
